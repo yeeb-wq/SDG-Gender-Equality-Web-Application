@@ -1,0 +1,122 @@
+/* Ensure full viewport height */
+body {
+  display: flex; /*Makes the <body> a flex container*/
+  flex-direction: column; /*To make sure that everything is stacked vertically */
+  min-height: 97vh;  /* The size of the page */
+  overflow-x: hidden;
+  background-color: #F9F5F0; /* Light Gray for a soft contrast */
+  color: #333; /* Dark Gray for readability */
+}
+
+/* Center the heading and paragraph */
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  color: #2C3E50; /* Deep Blue for contrast */ /* Dark Blue for contrast */
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  color: #555; /* Slightly softer gray for readability */
+}
+
+/* Team avatars container */
+.team-avatars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* positions the flex items in the center of the container:*/
+  gap: 30px;
+  align-items: flex-start ; /* Ensures avatars stay at the top */
+}
+
+/* Each avatar card holds the image and its dropdown */
+.avatar {
+  position: relative;
+  display: inline-block;
+
+}
+
+/* Avatar button */
+.avatar-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Avatar images */
+.avatar-photo {
+  width: 225px;
+  height: 240px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  padding: 0; /* Ensures no extra space */
+
+}
+
+/* Hidden dropdown text box */
+.dropdown {
+  position: relative;
+  top: 100%; /* Ensures it appears directly below the avatar */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+  background-color:#E35D4F;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.dropdown p{
+	  color:white;
+	  font-size: 20px;
+}
+.dropdown li {
+	 color:white;
+	  font-size: 20px;
+}	  
+
+/* Hover and Focus Effects */
+.avatar:hover .avatar-photo,
+.avatar-button:focus .avatar-photo {
+  transform: scale(1.03);
+  opacity: 0.8;
+  border: 2px solid #ff5733;
+
+}
+
+/* Make dropdown appear when hovered or focused */
+.avatar:hover .dropdown,
+.avatar-button:focus + .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.avatar-button:focus {
+  outline: none; /* Remove default browser outline */
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  background-color: #2c3e50; /* Dark Blue for strong contrast */
+  width: 100%;
+  margin-top: auto; /* Ensures it stays at the bottom */
+}
+
+footer a {
+    color: white; /* Gold for an elegant look */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: Make it bold */
+}
+
+footer a:hover {
+    color: #F39C12; /* Warm Yellow Hover Effect */
+}
+

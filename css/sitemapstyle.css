@@ -1,0 +1,56 @@
+			.svg-div {
+			
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				padding: 10px;
+				background-color: white;
+			
+			}
+			
+			svg ellipse, text {
+			
+				pointer-events: all;
+			
+			}
+			
+			svg ellipse:hover {
+			
+				fill: #e3ab6b;
+			
+			}
+			
+			text {
+			
+				fill: white;
+				font-weight: bold;
+				font-family: Arial; 
+				font-size: 13.65px; 
+				letter-spacing: 0; 
+				text-anchor: middle; 
+				dominant-baseline: middle;
+			
+			}
+			
+			.splash-home-text {
+			
+				font-size: 10.725px; 
+			
+			}
+			
+			ellipse {
+				
+				fill: #ff7d6a;
+				stroke: #b50f00;
+				stroke-width: 3;
+				
+			}
+
+			line {
+				
+				stroke: #e4a048;
+				stroke-width: 3;
+				
+			}	

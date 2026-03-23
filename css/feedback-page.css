@@ -1,0 +1,156 @@
+h1{
+	text-align: center;
+}
+fieldset {
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding: 50px;
+	  border-radius:40px;
+	  text-align:center;
+}
+fieldset a {
+    color: white; /* Change text color to white */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: Make it bold */
+}
+
+fieldset a:hover {
+    color: #ffd700; /* Optional: Change color on hover */
+}
+
+body{
+	font-family:Arial, sans-serif;
+    padding: 18px;
+	overflow-x: hidden;
+	
+}
+legend{
+	font-weight:bold;
+	font-size:24px; 
+	padding:20px;
+}
+label{
+	font-weight:bold;
+	font-size:17px;
+}
+p{
+	font-weight:bold;
+	font-size:17px;
+}
+.container{
+	max-width:750px;  /* ensuring that on large screens the content doesn't become overly stretched */
+    margin: 0 auto;   /*centered on the page*/
+    border-radius: 100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: row; /* Stack options horizontally */
+    justify-content: center; /* Centers the options */
+    gap: 10px; /* Adds spacing between options */
+	margin-bottom: 30px; /* Adds space below checkboxes */
+}
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between button and text */
+    font-size: 0.9em;
+	font-weight:normal;
+}
+
+/* Slightly increase radio & checkbox size for better visibility */
+input[type="radio"],
+input[type="checkbox"] {
+	transform: scale(1.4); /* Keep default size */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="datetime-local"],
+input[list],
+textarea,
+select {
+  width: 60%;
+  padding: 10px 5px;
+  margin: 8px auto;
+  display:block;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+
+}
+input[type="file"] {
+	width: 25%;
+	padding: 10px;
+	margin: 8px auto; /* Centers it */
+    display: block;
+	
+}
+
+.submit-btn {
+      background-color: #28a745;
+      color: #fff;
+	  padding: 10px 20px;
+	  border: none;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+	  display: block;
+      margin: 0 auto;	  
+  
+    }
+.submit-btn:hover {
+    background-color: #218838;
+    }
+.rating {
+      display: flex;
+	  justify-content: center;  /* Centers rating icons */
+      gap: 10px;
+      margin-bottom: 35px;
+    }
+.rating button {
+      background: none;
+      border: none;
+      font-size: 1.5em;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+.rating button:hover {
+      transform: scale(1.2);
+    }
+
+	
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid blue; /* Change the border to blue on focus */
+  outline: none;          /* Optionally remove the default outline */
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Subtle blue glow */
+}
+
+#char-counter {
+    font-weight: normal;
+    color: gray;
+    font-size: 14px;
+}
+/* Validation Styling */
+        input:focus, textarea:focus, select:focus {
+            border: 1px solid blue;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+        }
+
+        input.invalid, textarea.invalid, select.invalid {
+            border: 1px solid red;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            display: block;
+            margin-top: 5px;
+        }
+

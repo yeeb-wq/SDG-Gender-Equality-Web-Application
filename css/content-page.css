@@ -1,0 +1,154 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+	overflow-x:hidden;
+    scroll-behavior: smooth;
+
+}
+
+/* HERO SECTION */
+.hero {
+    width: 100%;
+	min-height: 100vh; 
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://img.freepik.com/free-vector/gender-equality-concept-with-man-woman_23-2148581129.jpg?t=st=1741472680~exp=1741476280~hmac=cdf1557053944974563a1f272576968a9571559273087a42b53adb3c23b693c5&w=1380);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-color: #000; /* or another color that complements your image */
+    display: flex;
+	flex-wrap: wrap;  /* Allow content to wrap on smaller screens */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+	color: #FFD700; /* Gold for an elegant touch */
+}
+
+.hero p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #FF6B81;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #D62C47;;
+}
+
+/* SIDE NAVIGATION FOR LONG PAGES */
+.side-nav {
+    position: fixed;
+    top: 75%;
+    left: 20px;
+    transform: translateY(-50%);
+    background: rgba(255, 64, 129, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+	width: 180px; /* Fixed width to prevent expansion */
+	background: #FF8C66; /* Light Coral */
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	display: flex;
+    flex-direction: column;
+   
+}
+
+.side-nav ul li {
+    margin: 10px 0;
+}
+
+.side-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.side-nav ul li a:hover {
+    background: #e60067;
+    border-radius: 5px;
+}
+
+/* MAIN CONTENT SECTION */
+.content {
+    padding: 50px;       
+	display: flex;
+    flex-wrap: wrap;  /* Allow main content elements to wrap */
+    justify-content: center;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+    color: #E74C3C; /* Red */
+	flex-basis: 100%;  /* Ensure heading takes full width */
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #555;
+}
+
+/* Go to Top Button */
+.go-to-top {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background:#f4c542 ;
+		color: white;
+		padding: 10px 15px;
+		font-size: 1.2rem;
+		border-radius: 6px;
+		text-decoration: none;
+		transition: background 0.3s;
+	}
+
+	.go-to-top:hover {
+		background: #e60067;
+	}
+
+
+
+.content-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+section {
+  scroll-margin-top: 80px;
+ 
+}
